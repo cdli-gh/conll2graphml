@@ -217,22 +217,38 @@ nx.write_graphml(G, 'output-graph.graphml')
 # Create a list of the period attribute values
 periods = ['period:Ur III', 'period:early', 'period:middle', 'period:late']
 
-# Create a new graph for each period attribute
+
+# Optimize graph creation and saving for each period attributes - (Start)
+
+# Create a dictionary to store the graphs for each period attribute
+graphs = {}
+
+# Iterate over each period attribute
 for period in periods:
-    # Initialize the new graph
+    # Initialize a new graph for the current period
     G_period = nx.Graph()
-    
-    # Add nodes and edges with the given period attribute to the new graph
+
+    # Add nodes and edges with the given period attributes to the new graph
     for name, node_attrs in G.nodes(data=True):
-        if period in node_attrs and node_attrs[period] == '1':
+        # Check if the current node has the desired period attributes
+        period_attr = node_attrs.get(period)
+        if period_attr == '1':
             G_period.add_node(name, **node_attrs)
-    
+        
     for name1, name2, edge_attrs in G.edges(data=True):
-        if period in edge_attrs and edge_attrs[period] == '1':
+        # Check if the current edge has the desired period attribute
+        period_attr = edge_attrs.get(period)
+        if period_attr == '1':
             G_period.add_edge(name1, name2, **edge_attrs)
-    
-    # Save the new graph as a GraphML file
-    nx.write_graphml(G_period, f'graph_{period}.graphml')
+
+    # Store the graph for the current period in the dictionary
+    graphs[period] = G_period
+
+# Save each graph in the dictionary as a separate GraphML file
+for period, graph in graphs.items():
+    nx.write_graphml(graph, f'graph_{period}.graphml')
+
+# Optimize graph creation and saving for each period attributes - (End)
 
 
 
