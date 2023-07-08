@@ -9,6 +9,7 @@ This script creates a co-occurrence network of named entities mentioned in annot
 - add text attributes from artifact metadata (use CDLI API when stand-alone or db or local dump for the online version)
 
   ### Nice to have
+- Extend the functionality of using POS/NE tag to some additional tags in MISC field (eg. commodity, profession, etc)
 - use the misc column to add additional attributes to the nodes, such as roles
 - use the syntax information to create directed edges
 - use the syntax information to infer roles (as per @Chiarcos' idea)
