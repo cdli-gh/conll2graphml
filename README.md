@@ -30,8 +30,8 @@ python conll2graph.py adab.conll nodes_attributes.tsv edges_attributes.tsv NEs_t
 ### Requirements
 #### CoNLL
 - lemma should be followed with the sense in square brackets, eg Jean-Jacques[1]
-- POS is requred for the lemmata to add to the graph
-- Morphological annotations must be stripped piror to running the script
+- POS is required for the lemmata to add to the graph
+- Morphological annotations must be stripped prior to running the script
 
 #### node_attr and edge_attr
 - column names will be used as attributes names
