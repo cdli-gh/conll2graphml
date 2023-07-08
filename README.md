@@ -46,8 +46,7 @@ python conll2graph.py adab.conll nodes_attributes.tsv edges_attributes.tsv NEs_t
 - column names will be used as attributes names
 
 #### NE_to_remove
-- One item per line
- 
+- One item per line, used for broken forms `eg ...[0]` and `ur-x[0]`
 
 ## Dependencies
 
