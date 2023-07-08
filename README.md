@@ -5,7 +5,9 @@ This script creates a co-occurrence network of named entities mentioned in annot
 ### Priority
 - Strip any morphological annotations before proceeding
 - feed the POS tags to look out for from the command or a file, not in the script
-- period attribute should be optional
+- period attribute from sheet should be optional
+- add text attributes from artifact metadata (use CDLI API when stand-alone or db or local dump for the online version)
+
   ### Nice to have
 - use the misc column to add additional attributes to the nodes, such as roles
 - use the syntax information to create directed edges
