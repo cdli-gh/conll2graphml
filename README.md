@@ -2,8 +2,11 @@
 This script creates a co-occurrence network of named entities mentioned in annotated texts. It reads input data from CoNLL-U formatted files and extracts relevant information to construct a graph. The graph represents the relationships between named entities based on their co-occurrence in the texts.
 
 ## Todo
-- Strip any morphological annotations before proceding
+### Priority
+- Strip any morphological annotations before proceeding
 - feed the POS tags to look out for from the command or a file, not in the script
+- period attribute should be optional
+  ### Nice to have
 - use the misc column to add additional attributes to the nodes, such as roles
 - use the syntax information to create directed edges
 - use the syntax information to infer roles (as per @Chiarcos' idea)
