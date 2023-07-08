@@ -18,7 +18,7 @@ python conll2graph.py conll node_attr edge_attr NE_to_remove
   
 example:   
 ```
-conll2graphml % python conll2graph.py adab.conll nodes_attributes.tsv edges_attributes.tsv NEs_to_remove.txt
+python conll2graph.py adab.conll nodes_attributes.tsv edges_attributes.tsv NEs_to_remove.txt
 ```
 
 ### Arguments
