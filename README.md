@@ -7,6 +7,7 @@ This script creates a co-occurrence network of named entities mentioned in annot
 - feed the POS tags to look out for from the command or a file, not in the script
 - period attribute from sheet should be optional
 - add text attributes from artifact metadata (use CDLI API when stand-alone or db or local dump for the online version)
+- add node metadata from sense entry in dictionary (When available, todo... )
 
   ### Nice to have
 - Extend the functionality of using POS/NE tag to some additional tags in MISC field (eg. commodity, profession, etc)
