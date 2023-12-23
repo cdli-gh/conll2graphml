@@ -1,5 +1,5 @@
 # conll2graphml
-This script creates a co-occurrence network of named entities mentioned in annotated texts. It reads input data from CoNLL-U formatted files and extracts relevant information to construct a graph. The graph represents the relationships between named entities based on their co-occurrence in the texts.
+This script creates a co-occurrence network of named entities mentioned in annotated texts. It reads input data from CoNLL formatted files and extracts relevant information to construct a graph. The graph represents the relationships between named entities based on their co-occurrence in the texts.
 
 
 ## Authorship
